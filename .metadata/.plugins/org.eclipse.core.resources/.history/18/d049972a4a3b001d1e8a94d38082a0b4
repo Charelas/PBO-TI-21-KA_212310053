@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Latihan07 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Masukan Nama Anda :");
+	String str1 = input.nextLine();
+	
+	System.out.println(str1.replace('a','X'));
+	System.out.println(str1);
+	
+	
+	input.close();
+	
+	}
+
+}

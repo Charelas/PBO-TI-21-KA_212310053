@@ -1,0 +1,40 @@
+class Cat {
+	protected int age = 13;
+	public void barking() {
+		System.out.println("Meow...meow");
+	}
+	public void showGender(char gender) {
+		String genderLabel;
+	switch(gender) {
+		case 'M' :{
+		 System.out.println("He is MALE");
+	}break;
+		case 'F' :{
+		 System.out.println("She is a FEMALE");
+	}break;
+	default:
+		 System.out.println("Non binary animal");
+		}
+	}
+}
+
+
+
+
+
+public class Modifier {
+	public static void main(String[] args) {
+		Cat mycat = new Cat();
+		//System.out.println("My cat age is" + mycat.age + "Years old");
+		//mycat.barking();
+		//String status;
+		mycat.showGender('F');
+		//if(mycat.age > 15) {
+		//status = "Old";
+		//}else {
+		//status = "Young";
+		//}
+		//System.out.println("My cat is sooo " +status);
+	}
+
+}

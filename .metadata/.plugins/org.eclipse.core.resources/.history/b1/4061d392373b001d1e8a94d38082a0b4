@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Latihan05 {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str = "Pemprograman Berbasis Objek";
+		int nama;
+		
+		
+	       String str1 = str.toUpperCase();
+	       String str2 = str.toLowerCase();
+	       System.out.println("Masukan Kalimat");
+	       nama = input.nextInt();
+	       System.out.println("str = " + str);
+	       System.out.println();
+	       System.out.println("Huruf besar = " + str1);
+	       System.out.println("Huruf Kecil = " + str2);
+	}
+
+}

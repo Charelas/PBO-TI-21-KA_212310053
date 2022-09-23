@@ -1,0 +1,17 @@
+
+public class Latihan05 {
+	
+	public static void main(String[] args) {
+		
+		String name;
+		
+	       String name1 = name.toUpperCase();
+	       String name2 = name.toLowerCase();
+	       System.out.println();
+	       System.out.println("str = " + name);
+	       System.out.println();
+	       System.out.println("Huruf besar = " + name1);
+	       System.out.println("Huruf Kecil = " + name2);
+	}
+
+}

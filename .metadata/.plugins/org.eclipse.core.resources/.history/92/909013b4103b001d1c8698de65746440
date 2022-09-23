@@ -1,0 +1,16 @@
+
+public class Latihan05 {
+	
+	public static void main(String[] args) {
+		
+		String str = "Belajar Java Melalui Contoh";
+	       String str1 = str.toUpperCase();
+	       String str2 = str.toLowerCase();
+	       System.out.println();
+	       System.out.println("str = " + str);
+	       System.out.println();
+	       System.out.println("Huruf besar() = " + str1);
+	       System.out.println("Huruf Kecil() = " + str2);
+	}
+
+}

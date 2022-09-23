@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Latihan07 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Masukan Nama Anda :");
+	String nama = input.nextLine();
+	for (int i = 0; i < nama.length(); i++){
+		if(nama.charAt(i) == 'a' || nama.charAt(i) == 'i' || nama.charAt(i) == 'u' || nama.charAt(i) == 'e' || nama.charAt(i) == 'o' ) {
+			System.out.println("X");
+			i++;
+		}
+		System.out.println(nama.charAt(i));	
+		
+	}
+
+	
+	
+	input.close();
+	
+	}
+
+}

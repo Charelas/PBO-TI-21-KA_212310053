@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Latihan03 {
+	int r, t, l, p;
+	double hasil;
+	double phi = 3.14;
+	
+	Scanner input = new Scanner(System.in);
+
+void segitigaKerucut() {
+	System.out.println("Masukan jari - jari alas kerucut = ");
+		r = input.nextInt();
+		System.out.println("Masukkan tinggi kerucut = ");
+		t = input.nextInt();
+		hasil = 1 / (int) 3 * phi * r * r * t;
+		System.out.println("Hasilnya adalah :" + hasil);
+}
+
+void Tabung() {
+	System.out.println("Masukan jari - jari tabung = ");
+		r = input.nextInt();
+		System.out.println("Masukan tinggi tabung = ");
+		t = input.nextInt();
+		hasil = phi*r*r*t;
+		System.out.println("Hasilnya adalah :" + hasil);
+}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String pilihanUser;
+		Latihan03 objek = new Latihan03();
+	System.out.println("Menhitung Bangun Ruang");
+	
+	
+	System.out.println("1. Mencari Volume Segitiga Kerucut");
+	System.out.println("2. Mencari Volume Tabung");
+	System.out.println("=====================================");
+	System.out.println("Silahkan pilih bangun ruang yang akan dihitung");
+	int pilih = input.nextInt();
+	
+	switch(pilih) {
+	
+	case 1:
+		System.out.println("Anda memilih Segitiga Kerucut");
+		objek.segitigaKerucut();
+		break;
+		
+	case 2:
+		System.out.println("Anda memilih Tabung");
+		objek.Tabung();
+	}
+
+	}
+
+}

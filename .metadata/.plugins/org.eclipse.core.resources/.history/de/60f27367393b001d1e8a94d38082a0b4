@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Latihan05 {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String nama = input.nextLine();
+		
+		   System.out.println("Masukkan Kalimat"+ nama);
+	       System.out.println(nama.toUpperCase());
+	       
+	       
+	       
+	}
+
+}

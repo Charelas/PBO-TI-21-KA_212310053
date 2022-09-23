@@ -1,0 +1,15 @@
+
+public class StringEdit {
+    public static void main(String[] args) {
+        //mengubah karakter di dalam string
+
+        String str1 = "abcde";
+
+        //mengubah string menjadi char[], ganti huruf, convert balik ke string
+        char[] str1Char = str1.toCharArray();
+        str1Char[a] = 'x';
+        str1 = String.valueOf(str1Char);
+        System.out.println(str1);
+
+    }
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Latihan08 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		String npm,fullname,ipk,classname,semester;
+		
+		System.out.print("gNPM : " );
+		npm = input.nextLine();
+		
+		System.out.print("Nama Lengkap : ");
+		fullname = input.nextLine();
+		
+		System.out.print("Nama Kelas : ");
+		classname = input.nextLine();
+		
+		System.out.print("Semester : ");
+		semester = input.nextLine();
+		
+		System.out.print("IPK : ");
+		ipk = input.nextLine();
+		
+		System.out.println();
+		System.out.println("Masukan NPM : " + npm);
+		System.out.println("Masukan Nama Lengkap : " + fullname);
+		System.out.println("Masukan Nama Kelas : " + classname);
+		System.out.println("Masukan Semester : " + semester);
+		System.out.println("Masukan IPK Anda :" + ipk);
+
+		input.close();
+	}
+
+}

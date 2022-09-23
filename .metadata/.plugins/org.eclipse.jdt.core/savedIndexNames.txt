@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Kuliah TI SM 3\PBO & Lab\Latihan\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1131200769.index
+4223094303.index

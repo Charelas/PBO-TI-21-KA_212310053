@@ -1,0 +1,207 @@
+import java.util.Scanner;
+class BangunRuang{
+public static final double phi = 3.14;
+public static double lpkubus(double rusuk){
+	rusuk *= rusuk;
+	double hasil = 6 * rusuk;
+	return hasil ;
+}
+public static double lpkerucut(double jari, double s){
+	double a = phi * jari * s;
+	double b = phi * jari * jari;
+	double hasil = a + b;
+	return hasil;
+}
+public static double lplimas3(double ls1, double ls2, double ls3, double ls4){
+	ls1 += ls2;
+	ls3 += ls4;
+	double hasil = ls1 + ls3;
+	return hasil;
+}
+public static double lplimas4(double ls1, double ls2, double ls3,double ls4,double ls5){
+	ls1 += ls2;
+	ls3 += ls4;
+	double hasil = ls1 + ls3 + ls5;
+	return hasil;
+}
+//public static double lpprisma3(){}
+public static double lpbalok(double panjang, double lebar, double tinggi){
+	double a,b,c;
+	a = 2 * (panjang * lebar);
+	b = 2 * (panjang * tinggi);
+	c = 2 * (lebar * tinggi);
+	double hasil = a+b+c;
+	return hasil;
+}
+public static double lpbola(double jari){
+	jari *= jari;
+	double hasil = 4 * phi * jari;
+	return hasil;
+}
+public static double lptabung(double r, double T){
+	double a = 2 * phi * r * T;
+	double b = 2 * phi * r * r;
+	double hasil = a +b ;
+	return hasil;
+}
+
+public static double vkerucut(double jari, double T){
+	jari *= jari;
+	double hasil = phi * jari * T * 0.3;
+	return hasil;
+}
+public static double vkubus(double rusuk){
+	double a = rusuk * rusuk ;
+	double hasil = a * rusuk;
+	return hasil;
+}
+public static double vlimas4(double la, double tinggi){
+	la *=tinggi;
+	double hasil = la / 3;
+	return hasil;
+}
+public static double vbalok(double panjang, double lebar, double tinggi){
+	panjang *= lebar;
+	double hasil = tinggi * lebar;
+	return hasil;
+}
+public static double vprisma3(double alas, double t, double T){
+	alas *= t;
+	T *= alas;
+	double hasil = 0.5 * T;
+	return hasil ;
+}
+public static double vtabung(double jari, double T){
+	jari *= jari;
+	double hasil = phi * jari * T;
+	return hasil;
+}
+public static double vbola(double jari){
+	double a = jari * jari * jari;
+	double hasil = 1.3 * phi * a;
+	return hasil;
+}
+
+public static double lsprisma3(double s1, double s2, double s3, double tinggi){
+	s1 += s2; s3 +=s1;
+	double hasil = s3 * tinggi;
+	return hasil;
+}
+public static double lseltabung(double r , double T){
+	r *= T;
+	double hasil = 2 * phi * r;
+	return hasil;	
+}
+public static double lselkerucut(double rusuk, double sisi){
+	rusuk *= sisi;
+	double hasil = phi * rusuk;
+	return hasil;
+}
+
+	public static void main(String[] argumen){
+	try (Scanner inp = new Scanner(System.in)) {
+		double rusuk,jari,s,ls1,ls2,ls3,ls4,ls5,panjang,lebar,TINGGI,tinggi,la,s1,s2,s3;
+		System.out.println("Silahkan ketikkan apa yang akan anda hitung : ");
+		String input = inp.nextLine();
+		if ("Luas permukaan kubus".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai rusuk : ");
+			rusuk = inp.nextDouble();
+			System.out.print("hasil perhitungan luas permukaan kubus : "+lpkubus(rusuk));
+		}
+		else if ("luas permukaan kerucut".equalsIgnoreCase(input)){
+			System.out.print("silahkan inputkan nilai jari-jari anda : ");
+			jari = inp.nextDouble();
+			System.out.print("Silahkan inputkan nilai panjang sisi anda : ");
+			s = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas permukaan kerucut adalah : "+lpkerucut(jari,s));
+		}
+		else if ("Luas permukaan limas segitiga".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai luas sisi ke 1 : "); ls1 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 2 : "); ls2 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 3 : "); ls3 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 4 : "); ls4 = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas permukaan limas segitiga adalah : "+lplimas3(ls1,ls2,ls3,ls4));
+			
+		}
+		else if ("luas permukaan limas segiempat".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai luas sisi ke 1 : "); ls1 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 2 : "); ls2 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 3 : "); ls3 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 4 : "); ls4 = inp.nextDouble();
+			System.out.print("Inputkan nilai luas sisi ke 5 : "); ls5 = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas permukaan limas segiempat adalah : "+lplimas4(ls1,ls2,ls3,ls4,ls5));
+		}
+		else if ("luas permukaan prisma segitiga".equalsIgnoreCase(input)){}
+		else if ("luas permukaan balok".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai panjang : "); panjang = inp.nextDouble();
+			System.out.print("Inputkan nilai lebar : "); lebar = inp.nextDouble();
+			System.out.print("Inputkan nilai tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil perhitungan luas permukaan balok adalah : "+lpbalok(panjang,lebar,tinggi));
+		}
+		else if ("luaS permukaan tabung".equalsIgnoreCase(input)){
+			System.out.print("inputkan nilai jari-jari : "); jari = inp.nextDouble();
+			System.out.print("Inputkan niali Tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari luas permukaan tabung adalah : "+lptabung(jari,tinggi));
+		}
+		else if ("luaS permukaan bola".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai jari-jari anda : ");  jari = inp.nextDouble();
+			System.out.print("Hasil dari luas permukaan bola adalah : "+lpbola(jari));
+		}
+		
+		else if ("volume kerucut".equalsIgnoreCase(input)){
+			System.out.print("inputkan nilai jari-jari anda : "); jari = inp.nextDouble();
+			System.out.print("inputkan nilai Tinggi kerucut : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari volume kerucut : "+vkerucut(jari,tinggi));
+		}
+		else if ("volume kubus".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai rusuk : "); rusuk = inp.nextDouble();
+			System.out.print("Hasil dari volume kubus : "+vkubus(rusuk));	
+		}
+		else if ("volume limas segiempat".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai luas alas : "); la = inp.nextDouble();
+			System.out.print("Inputkan nilai tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari volume limas segiempat : "+vlimas4(la,tinggi));
+		}
+		else if ("Volume balok".equalsIgnoreCase(input)){
+			System.out.print("Inpukan nilai panjang : "); panjang = inp.nextDouble();
+			System.out.print("Inputkan nilai lebar : "); lebar = inp.nextDouble();
+			System.out.print("Inputkan nilai tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari volume balok : "+vbalok(panjang,lebar,tinggi));
+		}
+		else if ("volume prisma segitiga".equalsIgnoreCase(input)){
+			System.out.print("inputkan nilai alas : "); la = inp.nextDouble();
+			System.out.print("Inputkan nilai t : "); tinggi = inp.nextDouble();
+			System.out.print("Inputkan nilai T : "); TINGGI = inp.nextDouble();
+			System.out.print("Hasil dari volume prisma segitiga : "+vprisma3(la,tinggi,TINGGI));
+		}
+		else if ("volume tabung".equalsIgnoreCase(input)){
+			System.out.print("inputkan nilai jari-jari : "); jari = inp.nextDouble();
+			System.out.print("inputkan nilai tinggi tabung :"); tinggi = inp.nextDouble();
+			System.out.print("Hasil perhitungan dari volume tabung : "+vtabung(jari,tinggi));
+		}
+		else if ("volume bola".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai jari-jari : "); jari = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan volume bola : " +vbola(jari));
+		}
+		
+		else if ("luas selimut prisma segitiga".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai sisi pertama : "); s1 = inp.nextDouble();
+			System.out.print("Inputkan nilai sisi kedua : "); s2 = inp.nextDouble();
+			System.out.print("Inputkan nilai sisi ketiga : "); s3 = inp.nextDouble();
+			System.out.print("Inputkan nilai tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas selimut prisma segitga : "+lsprisma3(s1,s2,s3,tinggi));
+		}
+		else if ("luas selimut tabung".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai jari-jari : "); jari = inp.nextDouble();
+			System.out.print("Inputkan nilai tinggi : "); tinggi = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas selimut tabung : "+lseltabung(jari,tinggi));
+		}
+		else if ("luas selimut kerucut".equalsIgnoreCase(input)){
+			System.out.print("Inputkan nilai rusuk : "); rusuk = inp.nextDouble();
+			System.out.print("Inputkan nilai sisi : "); s = inp.nextDouble();
+			System.out.print("Hasil dari perhitungan luas selimut : "+lselkerucut(rusuk,s));
+		}
+		else
+			System.out.print("Perhitungan bangun ruang dasar yang anda cari tidak ada ");
+	}
+}}

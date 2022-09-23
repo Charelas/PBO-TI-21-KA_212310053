@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.time.LocalDateTime; // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter; // Import the DateTimeFormatter class
+
+public class Latihan04 {
+	public static void main(String[] args) {
+	Scanner sc = new Scanner (System.in);
+
+	
+	LocalDateTime myDateObj = LocalDateTime.now();
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd MMM yyyy (HH:mm)");
+    String formattedDate = myDateObj.format(myFormatObj); 
+    
+	System.out.println("======================================================");
+	System.out.println("		TOKO SERBAGUNA IBIK				");
+	System.out.println("======================================================");
+	System.out.println("Masukan jumlah produk yang dibeli :");
+	System.out.println(formattedDate);
+	System.out.println("ITEM           QTY            HARGA            TOTAL");
+	System.out.println("======================================================");
+	System.out.println();
+	System.out.println("-------------------------------------------------------");
+	System.out.println("Diskon :");
+	System.out.println("Sub Total :");
+	
+	
+	
+
+	}
+
+}

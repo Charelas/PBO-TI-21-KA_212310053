@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+
+public class Latihan03 {
+	int r, s, t, l, hasil,p;
+	double phi = 3.14;
+	
+	Scanner input = new Scanner(System.in);
+
+void segitigaKerucut() {
+	System.out.println("Masukan nilai r = ");
+	r = input.nextInt();
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

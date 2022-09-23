@@ -1,0 +1,26 @@
+class Cat {
+	public int age = 13;
+	public void barking() {
+		System.out.println("Meow...meow");
+	}
+}
+
+
+
+public class Modifier {
+	
+	public static void main(String[] args) {
+		Cat mycat = new Cat();
+		System.out.println("My cat age is" + mycat.age + "Years old");
+		mycat.barking();
+		String status;
+		
+		if(mycat.age > 15) {
+			status = "Old";
+		}else {
+		status = "Young";
+		}
+		System.out.println("My cat is sooo " +status);
+	}
+
+}
